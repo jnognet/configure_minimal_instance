@@ -5,6 +5,7 @@ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/dock
 sudo dnf install docker-ce -y
 sudo systemctl start docker
 sudo systemctl enable docker
+sudo usermod -a -G docker opc
 
 sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-aarch64 
 sudo chmod +x /usr/local/bin/docker-compose
