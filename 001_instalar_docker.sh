@@ -6,6 +6,6 @@ sudo dnf install docker-ce -y
 sudo systemctl start docker
 sudo systemctl enable docker
 
-sudo curl -L https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-aarch64 
 sudo chmod +x /usr/local/bin/docker-compose
-sudo docker-compose --version
+sudo /usr/local/bin/docker-compose --version
