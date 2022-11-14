@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #https://github.com/nuBacuk/docker-openvpn-arm64
 sudo modprobe iptable_filter  
 sudo modprobe iptable_nat  

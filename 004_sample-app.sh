@@ -1,1 +1,3 @@
+#!/bin/bash
+
 /usr/local/bin/kubectl apply -f 004_sample-app.yaml
