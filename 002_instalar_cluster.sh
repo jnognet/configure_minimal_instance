@@ -10,5 +10,5 @@ sudo curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 sudo /usr/local/bin/k3d cluster create k3s --api-port 6550 --k3s-arg "--disable=traefik@server:0" --wait --port "80:80@loadbalancer" --port "443:443@loadbalancer" --agents 2
 sudo mkdir -p /home/opc/.kube/
-sudo /usr/local/bin/k3d kubeconfig get -a > /home/opc/.kube/config
+sudo bash -c "/usr/local/bin/k3d kubeconfig get -a > /home/opc/.kube/config"
 sudo chown opc.opc -R /home/opc/.kube
